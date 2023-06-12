@@ -3,10 +3,7 @@ package utils
 import (
 	"encoding/json"
 	"fmt"
-<<<<<<< HEAD
 	tls "github.com/Noooste/utls"
-=======
->>>>>>> origin/main
 	"github.com/google/uuid"
 	log "github.com/sirupsen/logrus"
 	"golang.org/x/text/runes"
@@ -160,7 +157,6 @@ func CleanAddress(address string) string {
 	var punctuationReplace = regexp.MustCompile(`[[:punct:]]`)
 	return punctuationReplace.ReplaceAllString(s, ` `)
 }
-<<<<<<< HEAD
 
 // GetLastChromeVersion apply the latest Chrome version
 // Current Chrome version : 111
@@ -248,5 +244,3 @@ func GetLastChromeVersion() *tls.ClientHelloSpec {
 		Extensions: extensions,
 	}
 }
-=======
->>>>>>> origin/main
