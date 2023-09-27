@@ -179,7 +179,7 @@ func GetLastChromeVersion() *tls.ClientHelloSpec {
 			tls.PSSWithSHA512,
 			tls.PKCS1WithSHA512,
 		}},
-		&tls.UtlsExtendedMasterSecretExtension{},
+		&tls.ExtendedMasterSecretExtension{},
 		&tls.SessionTicketExtension{},
 		&tls.SCTExtension{},
 		&tls.RenegotiationInfoExtension{},
@@ -187,7 +187,7 @@ func GetLastChromeVersion() *tls.ClientHelloSpec {
 			tls.PskModeDHE,
 		}},
 		&tls.ApplicationSettingsExtension{SupportedProtocols: []string{"h2", "http/1.1"}},
-		&tls.CompressCertificateExtension{Algorithms: []tls.CertCompressionAlgo{
+		&tls.UtlsCompressCertExtension{Algorithms: []tls.CertCompressionAlgo{
 			tls.CertCompressionBrotli,
 		}},
 		&tls.SupportedVersionsExtension{Versions: []uint16{
