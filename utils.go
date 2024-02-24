@@ -20,9 +20,9 @@ import (
 )
 
 const (
-	Version     = "121"
+	Version     = "122"
 	UserAgent   = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/" + Version + ".0.0.0 Safari/537.36"
-	SecChUa     = "\"Not A(Brand\";v=\"99\", \"Google Chrome\";v=\"121\", \"Chromium\";v=\"121\""
+	SecChUa     = "\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Google Chrome\";v=\"122\""
 	BrowserName = "Chrome"
 	DeviceType  = "Desktop"
 	OsName      = "Windows"
